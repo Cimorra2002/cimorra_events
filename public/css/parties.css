@@ -1,0 +1,43 @@
+/* public/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.gallery-container {
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.photo-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.photo-row img {
+    width: 23%; /* Ajusta el tamaño según tus necesidades */
+    margin: 1%;
+    border-radius: 8px;
+}
+
+.view-all-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-all-button:hover {
+    background-color: #0056b3;
+}
