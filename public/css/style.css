@@ -1,9 +1,13 @@
 /* Estilos generales pagina */
 
-  body{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Helvetica, Arial, sans-serif;
-      overflow-x: hidden;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-bottom: 35px;
+}
