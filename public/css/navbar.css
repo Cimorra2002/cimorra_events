@@ -1,0 +1,151 @@
+/* Estilos barra de navegacion */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    gap: 40px;
+    background-color: #212529;
+    color: #9b9d9e;
+    height: 68px;
+    padding: 0 25px;
+    z-index: 3;
+  }
+
+  nav .imagen-logo{
+      display: flex;
+      vertical-align: middle;
+  }
+
+  nav .imagen-logo img{
+      height: 1.5em;
+  }
+
+  nav .imagen-logo h3{
+      margin: 0;
+      padding: 0;
+      float: left;
+      margin-left: 5px;
+      color: white;
+      font-weight: 200;
+  }
+
+  .lista {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .lista li {
+    margin: 0 0.5rem;
+    overflow: hidden;
+  }
+
+  .lista li a{
+      color: #9b9d9e;
+      text-decoration: none;
+      transition: 0.3s;
+  }
+
+  .lista li a:hover{
+      color: #c7c6c4;
+      transition: 0.3s;
+  }
+
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+
+  /* Boton del navbar */
+  /* Son 3 lineas que se alinean horizontalmente para dar la sensacion de un boton de hamburger */
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #9b9d9e;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    border-radius: 2px;
+  }
+
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  @media (max-width: 991px) {
+
+    /* Menu hamburger css */
+      nav{
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .menu-button-container{
+        display: flex;
+      }
+
+      /* Posicion desplegable del menu */
+      .lista {
+        position: absolute;
+        top: 68px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      #menu-toggle ~ .lista li{
+        height: 0;
+        margin: 0;
+        padding: 0;
+        padding-left: 65px;
+        border: 0;
+        transition: 0.4s;
+      }
+
+      #menu-toggle:checked ~ .lista li{
+        height: 2.5em;
+        padding: 0.05em;
+        padding-left: 65px;
+        transition: 0.4s;
+      }
+
+      .lista > li {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: #9b9d9e;
+        background-color: #212529;
+      }
+
+      main .separador{
+        display: block;
+        width: 100%;
+      }
+
+      main .separador div img{
+        width: 100%;
+      }
+    }
