@@ -6,14 +6,14 @@
     <title>Cimorra Events - @yield('title')</title></title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/parties.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 <body>
     @include('nav.navbar') <!-- Incluye menú -->
-
     <div class="container">
         @yield('content')
     </div>
-
-
+    @include('footer.footer') <!-- Incluye pie de pagina -->
 </body>
 </html>
