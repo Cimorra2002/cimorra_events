@@ -2,8 +2,8 @@
     <!-- Imagen y logo -->
     <div class="imagen-logo">
         <!-- Usa la función asset() para acceder a la imagen dentro de la carpeta public -->
-        <a href="{{ url('/') }}"><img src="{{ asset('images/F1logo.svg') }}" alt="Logo"></a>
-        <a href="{{ url('/') }}"><h3>Cimorra Events</h3></a>
+        <a href="{{ url('/') }}"><img src="{{ asset('images/logo_tfg_b.png') }}" alt="Logo"></a>
+        <a class="logo-text" href="{{ url('/') }}"><h3>Cimorra <br>Events</h3></a>
     </div>
 
     <!-- Checkbox para el menú responsivo -->
